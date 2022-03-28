@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Employee name</th>
+            <th scope="col">Employee name</th>
+            <th scope="col">Employee campany name</th>
+            <th scope="col">Employee Sallary</th>
+           
+          </tr>
+        </thead>
+        {% if student %}
+        <tbody>
+            {% for stu in student %}
+          <tr>
+            <th scope="row">{{stu.id}}</th>
+            <th scope="row">{{stu.Em_name}}</th>
+            <th scope="row">{{stu.Em_company_name}}</th>
+            <th scope="row">{{stu.Em_Sallary}}</th>
+           
+          </tr>
+         {% endfor %}
+        </tbody>
+        {% endif %}
+      </table>
+    
+</body>
+</html>
